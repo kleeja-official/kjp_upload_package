@@ -104,7 +104,7 @@ $kleeja_plugin['kjp_upload_package']['functions'] = [
 
         if ($config['kjp_active_subscriptions'] && defined('IN_SUBMIT_UPLOADING') && IN_SUBMIT_UPLOADING)
         {
-            if ($usrcp->group_id() !== 1 && ! $subscription->is_valid($usrcp->id()))
+            if ($usrcp->group_id() !== '1' && ! $subscription->is_valid($usrcp->id()))
             {
                 kleeja_err($olang['KJP_UPPACK_ERR']);
 
